@@ -1,4 +1,3 @@
-// Ecra do formulario (dono: A).
 // Dentro de uma IIFE para os nomes (TAGS, MAPA_*...) nao colidirem com os de outros ficheiros:
 // em scripts globais, dois "const" iguais em ficheiros diferentes partem a pagina.
 (function () {
