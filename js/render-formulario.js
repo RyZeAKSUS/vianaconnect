@@ -1,8 +1,7 @@
 
 (function () {
-
   // ==========================================
-  // ETIQUETAS E MAPAS DE AFINIDADE
+  // MAPAS DE AFINIDADE
   // ==========================================
 
   const TAGS = [
@@ -63,206 +62,68 @@
   };
 
   // ==========================================
-  // LISTA DE PAÍSES
+  // PAÍSES
   // ==========================================
 
   const paises = [
-    "Afeganistão",
-    "África do Sul",
-    "Albânia",
-    "Alemanha",
-    "Andorra",
-    "Angola",
-    "Antígua e Barbuda",
-    "Arábia Saudita",
-    "Argélia",
-    "Argentina",
-    "Arménia",
-    "Austrália",
-    "Áustria",
-    "Azerbaijão",
-    "Bahamas",
-    "Bangladexe",
-    "Barbados",
-    "Barém",
-    "Bélgica",
-    "Belize",
-    "Benim",
-    "Bielorrússia",
-    "Bolívia",
-    "Bósnia e Herzegovina",
-    "Botsuana",
-    "Brasil",
-    "Brunei",
-    "Bulgária",
-    "Burquina Faso",
-    "Burundi",
-    "Butão",
-    "Cabo Verde",
-    "Camarões",
-    "Camboja",
-    "Canadá",
-    "Catar",
-    "Cazaquistão",
-    "Chade",
-    "Chile",
-    "China",
-    "Chipre",
-    "Colômbia",
-    "Comores",
-    "Congo",
-    "Coreia do Norte",
-    "Coreia do Sul",
-    "Costa do Marfim",
-    "Costa Rica",
-    "Croácia",
-    "Cuba",
-    "Dinamarca",
-    "Djibuti",
-    "Dominica",
-    "Egito",
-    "El Salvador",
-    "Emirados Árabes Unidos",
-    "Equador",
-    "Eritreia",
-    "Eslováquia",
-    "Eslovénia",
-    "Espanha",
-    "Estados Unidos",
-    "Estónia",
-    "Eswatini",
-    "Etiópia",
-    "Fiji",
-    "Filipinas",
-    "Finlândia",
-    "França",
-    "Gabão",
-    "Gâmbia",
-    "Gana",
-    "Geórgia",
-    "Granada",
-    "Grécia",
-    "Guatemala",
-    "Guiana",
-    "Guiné",
-    "Guiné-Bissau",
-    "Guiné Equatorial",
-    "Haiti",
-    "Honduras",
-    "Hungria",
-    "Iémen",
-    "Ilhas Marshall",
-    "Ilhas Salomão",
-    "Índia",
-    "Indonésia",
-    "Irão",
-    "Iraque",
-    "Irlanda",
-    "Islândia",
-    "Israel",
-    "Itália",
-    "Jamaica",
-    "Japão",
-    "Jordânia",
-    "Kiribati",
-    "Koweit",
-    "Laos",
-    "Lesoto",
-    "Letónia",
-    "Líbano",
-    "Libéria",
-    "Líbia",
-    "Listenstaine",
-    "Lituânia",
-    "Luxemburgo",
-    "Macedónia do Norte",
-    "Madagáscar",
-    "Malásia",
-    "Maláui",
-    "Maldivas",
-    "Mali",
-    "Malta",
-    "Marrocos",
-    "Maurícia",
-    "Mauritânia",
-    "México",
-    "Micronésia",
-    "Moçambique",
-    "Moldávia",
-    "Mónaco",
-    "Mongólia",
-    "Montenegro",
-    "Myanmar",
-    "Namíbia",
-    "Nauru",
-    "Nepal",
-    "Nicarágua",
-    "Níger",
-    "Nigéria",
-    "Noruega",
-    "Nova Zelândia",
-    "Omã",
-    "Países Baixos",
-    "Palau",
-    "Palestina",
-    "Panamá",
-    "Papua-Nova Guiné",
-    "Paquistão",
-    "Paraguai",
-    "Peru",
-    "Polónia",
-    "Portugal",
-    "Quénia",
-    "Quirguistão",
-    "Reino Unido",
-    "República Centro-Africana",
-    "República Checa",
+    "Afeganistão", "África do Sul", "Albânia", "Alemanha",
+    "Andorra", "Angola", "Antígua e Barbuda",
+    "Arábia Saudita", "Argélia", "Argentina",
+    "Arménia", "Austrália", "Áustria", "Azerbaijão",
+    "Bahamas", "Bangladexe", "Barbados", "Barém",
+    "Bélgica", "Belize", "Benim", "Bielorrússia",
+    "Bolívia", "Bósnia e Herzegovina", "Botsuana",
+    "Brasil", "Brunei", "Bulgária", "Burquina Faso",
+    "Burundi", "Butão", "Cabo Verde", "Camarões",
+    "Camboja", "Canadá", "Catar", "Cazaquistão",
+    "Chade", "Chile", "China", "Chipre", "Colômbia",
+    "Comores", "Congo", "Coreia do Norte",
+    "Coreia do Sul", "Costa do Marfim", "Costa Rica",
+    "Croácia", "Cuba", "Dinamarca", "Djibuti",
+    "Dominica", "Egito", "El Salvador",
+    "Emirados Árabes Unidos", "Equador", "Eritreia",
+    "Eslováquia", "Eslovénia", "Espanha",
+    "Estados Unidos", "Estónia", "Eswatini",
+    "Etiópia", "Fiji", "Filipinas", "Finlândia",
+    "França", "Gabão", "Gâmbia", "Gana", "Geórgia",
+    "Granada", "Grécia", "Guatemala", "Guiana",
+    "Guiné", "Guiné-Bissau", "Guiné Equatorial",
+    "Haiti", "Honduras", "Hungria", "Iémen",
+    "Ilhas Marshall", "Ilhas Salomão", "Índia",
+    "Indonésia", "Irão", "Iraque", "Irlanda",
+    "Islândia", "Israel", "Itália", "Jamaica",
+    "Japão", "Jordânia", "Kiribati", "Koweit",
+    "Laos", "Lesoto", "Letónia", "Líbano",
+    "Libéria", "Líbia", "Listenstaine",
+    "Lituânia", "Luxemburgo", "Macedónia do Norte",
+    "Madagáscar", "Malásia", "Maláui", "Maldivas",
+    "Mali", "Malta", "Marrocos", "Maurícia",
+    "Mauritânia", "México", "Micronésia",
+    "Moçambique", "Moldávia", "Mónaco", "Mongólia",
+    "Montenegro", "Myanmar", "Namíbia", "Nauru",
+    "Nepal", "Nicarágua", "Níger", "Nigéria",
+    "Noruega", "Nova Zelândia", "Omã",
+    "Países Baixos", "Palau", "Palestina",
+    "Panamá", "Papua-Nova Guiné", "Paquistão",
+    "Paraguai", "Peru", "Polónia", "Portugal",
+    "Quénia", "Quirguistão", "Reino Unido",
+    "República Centro-Africana", "República Checa",
     "República Democrática do Congo",
-    "República Dominicana",
-    "Roménia",
-    "Ruanda",
-    "Rússia",
-    "Samoa",
-    "Santa Lúcia",
-    "São Cristóvão e Neves",
-    "São Marinho",
+    "República Dominicana", "Roménia", "Ruanda",
+    "Rússia", "Samoa", "Santa Lúcia",
+    "São Cristóvão e Neves", "São Marinho",
     "São Tomé e Príncipe",
-    "São Vicente e Granadinas",
-    "Seicheles",
-    "Senegal",
-    "Serra Leoa",
-    "Sérvia",
-    "Singapura",
-    "Síria",
-    "Somália",
-    "Sri Lanka",
-    "Sudão",
-    "Sudão do Sul",
-    "Suécia",
-    "Suíça",
-    "Suriname",
-    "Tailândia",
-    "Taiwan",
-    "Tajiquistão",
-    "Tanzânia",
-    "Timor-Leste",
-    "Togo",
-    "Tonga",
-    "Trindade e Tobago",
-    "Tunísia",
-    "Turquemenistão",
-    "Turquia",
-    "Tuvalu",
-    "Ucrânia",
-    "Uganda",
-    "Uruguai",
-    "Usbequistão",
-    "Vanuatu",
-    "Vaticano",
-    "Venezuela",
-    "Vietname",
-    "Zâmbia",
-    "Zimbabué"
+    "São Vicente e Granadinas", "Seicheles",
+    "Senegal", "Serra Leoa", "Sérvia", "Singapura",
+    "Síria", "Somália", "Sri Lanka", "Sudão",
+    "Sudão do Sul", "Suécia", "Suíça", "Suriname",
+    "Tailândia", "Taiwan", "Tajiquistão",
+    "Tanzânia", "Timor-Leste", "Togo", "Tonga",
+    "Trindade e Tobago", "Tunísia",
+    "Turquemenistão", "Turquia", "Tuvalu",
+    "Ucrânia", "Uganda", "Uruguai", "Usbequistão",
+    "Vanuatu", "Vaticano", "Venezuela",
+    "Vietname", "Zâmbia", "Zimbabué"
   ].sort((a, b) => a.localeCompare(b, "pt-PT"));
 
   // ==========================================
@@ -298,8 +159,8 @@
         titulo: "Qual é a tua situação atual?",
         tipo: "unica",
         opcoes: [
-          "Estudante", "Trabalhador",
-          "Trabalho remoto", "Estudante-trabalhador",
+          "Estudante", "Trabalhador", "Trabalho remoto",
+          "Estudante-trabalhador",
           "À procura de emprego", "Outra"
         ],
         obrigatoria: true
@@ -346,8 +207,7 @@
         titulo: "Quando tens disponibilidade?",
         tipo: "multipla",
         opcoes: [
-          "Dias úteis", "À noite",
-          "Sábados", "Domingos"
+          "Dias úteis", "À noite", "Sábados", "Domingos"
         ],
         obrigatoria: false
       }
@@ -377,9 +237,7 @@
         id: "ficar",
         titulo: "Pensarias em ficar a viver em Viana?",
         tipo: "unica",
-        opcoes: [
-          "Sim", "Talvez", "Não", "Ainda não sei"
-        ],
+        opcoes: ["Sim", "Talvez", "Não", "Ainda não sei"],
         obrigatoria: true
       },
       {
@@ -399,7 +257,7 @@
   ];
 
   // ==========================================
-  // CÁLCULO DE AFINIDADES
+  // PERFIL E AFINIDADES
   // ==========================================
 
   function pontuar(escolhidas, mapa, pontos, soma) {
@@ -453,6 +311,24 @@
   }
 
   // ==========================================
+  // VALIDAÇÃO DO NOME
+  // ==========================================
+
+  function limparNome(nome) {
+    return String(nome).replace(/[^\p{L} '\u2019-]/gu, "");
+  }
+
+  function nomeValido(nome) {
+    const valor = String(nome).trim();
+
+    return (
+      valor.length >= 2 &&
+      valor.length <= 80 &&
+      /^\p{L}+(?:[ '\u2019-]\p{L}+)*$/u.test(valor)
+    );
+  }
+
+  // ==========================================
   // PESQUISA DE PAÍSES
   // ==========================================
 
@@ -467,9 +343,7 @@
   function procurarPaises(texto) {
     const pesquisa = normalizar(texto);
 
-    if (!pesquisa) {
-      return [];
-    }
+    if (!pesquisa) return [];
 
     return paises
       .filter((pais) => normalizar(pais).includes(pesquisa))
@@ -504,7 +378,7 @@
     const respostas = { ...(estado.perfil || {}) };
 
     // ========================================
-    // CRIAR HTML DAS PERGUNTAS
+    // HTML DAS PERGUNTAS
     // ========================================
 
     function perguntaHTML(p) {
@@ -520,15 +394,13 @@
             maxlength="80"
             value="${escapar(atual || "")}"
             placeholder="Escreve aqui"
+            autocomplete="name"
           />
         `;
 
       } else if (p.tipo === "pais") {
-
-        // Campo de pesquisa com sugestões
         conteudo = `
           <div class="vc-pais-container">
-
             <input
               class="vc-input vc-pais-input"
               data-campo="pais"
@@ -549,7 +421,6 @@
               role="listbox"
               hidden
             ></div>
-
           </div>
         `;
 
@@ -562,7 +433,7 @@
           <div class="vc-opcoes">
             ${p.opcoes.map((op) => {
               const selecionado = p.tipo === "multipla"
-                ? (Array.isArray(atual) && atual.includes(op))
+                ? Array.isArray(atual) && atual.includes(op)
                 : atual === op;
 
               return `
@@ -595,7 +466,40 @@
     }
 
     // ========================================
-    // ATIVAR PESQUISA DE PAÍSES
+    // VALIDAÇÃO DO NOME AO ESCREVER
+    // ========================================
+
+    function ativarValidacaoNome() {
+      const input = raiz.querySelector(
+        '[data-campo="nome"]'
+      );
+
+      if (!input) return;
+
+      input.addEventListener("input", () => {
+        const original = input.value;
+        const corrigido = limparNome(original);
+
+        if (original !== corrigido) {
+          const posicao = input.selectionStart;
+          const antes = limparNome(
+            original.slice(0, posicao)
+          );
+
+          input.value = corrigido;
+
+          input.setSelectionRange(
+            antes.length,
+            antes.length
+          );
+        }
+
+        respostas.nome = input.value.trim();
+      });
+    }
+
+    // ========================================
+    // PESQUISA DE PAÍSES
     // ========================================
 
     function ativarPesquisaPaises() {
@@ -604,9 +508,7 @@
         "#vc-sugestoes-paises"
       );
 
-      if (!input || !lista) {
-        return;
-      }
+      if (!input || !lista) return;
 
       let indiceAtivo = -1;
       let resultados = [];
@@ -682,18 +584,16 @@
       });
 
       input.addEventListener("focus", () => {
-        if (input.value.trim()) {
-          mostrarSugestoes();
-        }
+        if (input.value.trim()) mostrarSugestoes();
       });
 
       input.addEventListener("keydown", (event) => {
-        if (lista.hidden) {
-          return;
-        }
+        if (lista.hidden) return;
 
-        if (event.key === "ArrowDown" &&
-            resultados.length > 0) {
+        if (
+          event.key === "ArrowDown" &&
+          resultados.length > 0
+        ) {
           event.preventDefault();
 
           indiceAtivo = Math.min(
@@ -704,16 +604,20 @@
           atualizarAtivo();
         }
 
-        if (event.key === "ArrowUp" &&
-            resultados.length > 0) {
+        if (
+          event.key === "ArrowUp" &&
+          resultados.length > 0
+        ) {
           event.preventDefault();
 
           indiceAtivo = Math.max(indiceAtivo - 1, 0);
           atualizarAtivo();
         }
 
-        if (event.key === "Enter" &&
-            indiceAtivo >= 0) {
+        if (
+          event.key === "Enter" &&
+          indiceAtivo >= 0
+        ) {
           event.preventDefault();
           selecionarPais(resultados[indiceAtivo]);
         }
@@ -728,11 +632,7 @@
           ".vc-pais-opcao"
         );
 
-        if (!botao) {
-          return;
-        }
-
-        selecionarPais(botao.dataset.pais);
+        if (botao) selecionarPais(botao.dataset.pais);
       });
 
       input.addEventListener("blur", () => {
@@ -746,7 +646,6 @@
 
     function recolher() {
       perguntas[passo].forEach((p) => {
-
         if (p.tipo === "texto" || p.tipo === "pais") {
           respostas[p.id] = raiz.querySelector(
             `[data-campo="${p.id}"]`
@@ -764,7 +663,6 @@
             `input[name="${p.id}"]:checked`
           )?.value || "";
         }
-
       });
     }
 
@@ -774,13 +672,10 @@
 
     function validar() {
       const erro = raiz.querySelector("#vc-erro");
-
       erro.textContent = "";
 
       const falta = perguntas[passo].find((p) => {
-        if (!p.obrigatoria) {
-          return false;
-        }
+        if (!p.obrigatoria) return false;
 
         const valor = respostas[p.id];
 
@@ -792,12 +687,21 @@
       if (falta) {
         erro.textContent =
           "Responde à pergunta: " + falta.titulo;
-
         return false;
       }
 
-      // Validar país apenas no primeiro passo
       if (passo === 0) {
+        if (!nomeValido(respostas.nome || "")) {
+          erro.textContent =
+            "Introduz um nome válido, sem números ou símbolos.";
+
+          raiz.querySelector(
+            '[data-campo="nome"]'
+          )?.focus();
+
+          return false;
+        }
+
         const paisEscolhido = paises.find(
           (pais) =>
             normalizar(pais) === normalizar(respostas.pais)
@@ -808,7 +712,6 @@
             "Seleciona um país válido da lista.";
 
           raiz.querySelector("#vc-pais")?.focus();
-
           return false;
         }
 
@@ -819,7 +722,7 @@
     }
 
     // ========================================
-    // NAVEGAÇÃO PARA RESULTADOS
+    // ECRÃ DE RESULTADOS
     // ========================================
 
     function irParaResultado() {
@@ -841,14 +744,16 @@
 
           <p>
             Obrigado,
-            ${escapar(estado.perfil?.nome || respostas.nome || "")}!
+            ${escapar(
+              estado.perfil?.nome || respostas.nome || ""
+            )}!
             As tuas preferências foram guardadas.
           </p>
 
           <p><strong>${escapar(mensagem)}</strong></p>
 
           <p>
-            Saldo: ${estado.sementes} Sementes
+            Consulta o teu saldo de Sementes no cabeçalho.
           </p>
 
           <div class="vc-botoes">
@@ -878,7 +783,7 @@
     }
 
     // ========================================
-    // DESENHAR FORMULÁRIO
+    // RENDERIZAR FORMULÁRIO
     // ========================================
 
     function render() {
@@ -903,7 +808,6 @@
           </p>
 
           <form id="vc-form" novalidate>
-
             ${perguntas[passo].map(perguntaHTML).join("")}
 
             <p
@@ -913,7 +817,6 @@
             ></p>
 
             <div class="vc-botoes">
-
               ${passo
                 ? `<button
                      type="button"
@@ -930,18 +833,16 @@
                   : "Continuar"
                 }
               </button>
-
             </div>
           </form>
         </div>
       `;
 
-      // Ativar pesquisa de países no passo 1
       if (passo === 0) {
+        ativarValidacaoNome();
         ativarPesquisaPaises();
       }
 
-      // Botão voltar
       raiz.querySelector("#vc-voltar")
         ?.addEventListener("click", () => {
           recolher();
@@ -949,16 +850,12 @@
           render();
         });
 
-      // Botão continuar/concluir
       raiz.querySelector("#vc-form")
         .addEventListener("submit", (event) => {
           event.preventDefault();
-
           recolher();
 
-          if (!validar()) {
-            return;
-          }
+          if (!validar()) return;
 
           if (passo < 2) {
             passo++;
@@ -966,16 +863,16 @@
             return;
           }
 
-          const primeiraVez =
-            !estado.formularioConcluido;
+          const primeiraVez = !estado.formularioConcluido;
 
-          concluirFormulario(
-            derivarPerfil(respostas)
-          );
+          // Guarda o perfil através da função existente.
+          // A atribuição de Sementes deve ser feita
+          // exclusivamente pelo sistema de Pontos.
+          concluirFormulario(derivarPerfil(respostas));
 
           renderFinal(
             primeiraVez
-              ? "+" + premio() + " Sementes recebidas!"
+              ? "Perfil concluído! Verifica as tuas Sementes no cabeçalho."
               : "Perfil atualizado!"
           );
 

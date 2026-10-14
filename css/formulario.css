@@ -71,3 +71,10 @@
 
 .vc-final { text-align: center; }
 .vc-final .vc-botoes { justify-content: center; flex-wrap: wrap; }
+
+
+.vc-opcao input {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}

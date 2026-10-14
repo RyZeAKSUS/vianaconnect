@@ -32,13 +32,18 @@ function guardarEstado() {
 
 let estado = carregarEstado();
 
+
 function concluirFormulario(perfil) {
-  estado.perfil = { ...perfil };
-  if (!estado.formularioConcluido) {
-    estado.formularioConcluido = true;
-    // O valor dos pontos vive em pontos.js (dono: C), para ter uma unica fonte
-    if (typeof ganharSementes === "function") ganharSementes("formulario");
-    else estado.sementes += 100;
-  }
-  guardarEstado();
+    estado.perfil = { ...perfil };
+
+    if (!estado.formularioConcluido) {
+        estado.formularioConcluido = true;
+
+        // Atribuir Sementes através do sistema de Pontos
+        if (typeof ganharSementes === "function") {
+            ganharSementes("formulario");
+        }
+    }
+
+    guardarEstado();
 }
