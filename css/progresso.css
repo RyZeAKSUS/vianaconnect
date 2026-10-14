@@ -88,3 +88,15 @@
   .progresso-arvore.cresceu .arvore-svg { animation: none; }
   .barra-cheia { transition: none; }
 }
+
+/* Desbloqueios reais: elementos com data-requer / data-requer-nivel */
+.bloqueado-nivel { opacity: .45; filter: grayscale(.6); cursor: not-allowed; }
+
+#toast-nivel {
+  position: fixed; left: 50%; bottom: 1.5rem; transform: translateX(-50%);
+  padding: .6rem 1rem; border-radius: .5rem;
+  background: #1d2b22; color: #fff; font-size: .95rem;
+  opacity: 0; pointer-events: none; transition: opacity .2s ease;
+  z-index: 1000;
+}
+#toast-nivel.visivel { opacity: 1; }
