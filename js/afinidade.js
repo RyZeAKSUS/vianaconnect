@@ -41,3 +41,23 @@ function calcularIndice(perfil, catalogo) {
   const soma = melhores.reduce((acc, r) => acc + r.score, 0);
   return Math.round(soma / melhores.length);
 }
+
+// Como cada etiqueta soa dentro da frase "valorizas ..."
+const NOME_ETIQUETA = {
+  mar: "o mar",
+  natureza: "a natureza",
+  desporto: "o desporto",
+  cultura: "a cultura",
+  tradicao: "a tradição",
+  gastronomia: "a gastronomia",
+  social: "a vida em comunidade",
+  tranquilidade: "a tranquilidade",
+};
+
+// Frase "porque combina contigo" a partir dos motivos; sem motivos fica neutra
+// em vez de inventar uma razao que o perfil nao sustenta.
+function explicarMatch(perfil, item) {
+  const nomes = melhoresMotivos(perfil || {}, item || {}).map((m) => NOME_ETIQUETA[m] || m);
+  if (!nomes.length) return "Pode alargar o teu dia a dia com algo diferente.";
+  return "Combina contigo porque valorizas " + nomes.join(" e ") + ".";
+}
