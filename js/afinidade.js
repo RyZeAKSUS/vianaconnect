@@ -52,6 +52,8 @@ const NOME_ETIQUETA = {
   gastronomia: "a gastronomia",
   social: "a vida em comunidade",
   tranquilidade: "a tranquilidade",
+  tecnologia: "a tecnologia",
+  carreira: "a evolução profissional",
 };
 
 // Frase "porque combina contigo" a partir dos motivos; sem motivos fica neutra
