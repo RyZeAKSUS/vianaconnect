@@ -1,0 +1,40 @@
+/* Cores definidas num so sitio para mudar a identidade visual facilmente */
+:root {
+  --fundo: #f6f3ec;
+  --texto: #12302a;
+  --destaque: #e9a06b;
+  --secundaria: #2f6f5e;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--texto);
+  color: var(--fundo);
+}
+
+main { padding: 16px; max-width: 720px; margin: 0 auto; }
+
+/* Cada ecra e uma section; so um fica visivel */
+.oculto { display: none; }
+
+button {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--destaque);
+  color: var(--texto);
+  font-weight: 600;
+  cursor: pointer;
+}

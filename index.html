@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VianaConnect</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>VianaConnect</h1>
+    <p id="sementes">0 Sementes</p>
+  </header>
+
+  <main>
+    <!-- Ecra 1: formulario em 3 passos (quem es, o que valorizas, o que te trava) -->
+    <section id="ecra-formulario" class="ecra">
+      <h2>Conta-nos de ti</h2>
+      <p>TODO: formulario em 3 passos.</p>
+      <button data-ir="ecra-resultado">Ver a minha vida em Viana</button>
+    </section>
+
+    <!-- Ecra 2: indice de afinidade, semana tipo, top 5 e travoes com resposta -->
+    <section id="ecra-resultado" class="ecra oculto">
+      <h2>A tua vida em Viana</h2>
+      <p>TODO: indice, semana tipo, top 5, travoes.</p>
+      <button data-ir="ecra-progresso">Ver o meu progresso</button>
+    </section>
+
+    <!-- Ecra 3: sementes, nivel, arvore e desbloqueios -->
+    <section id="ecra-progresso" class="ecra oculto">
+      <h2>O teu progresso</h2>
+      <p>TODO: sementes, niveis, arvore.</p>
+      <button data-ir="ecra-formulario">Voltar ao inicio</button>
+    </section>
+  </main>
+
+  <!-- Ordem importa: cada ficheiro usa funcoes dos anteriores -->
+  <script src="js/state.js"></script>
+  <script src="js/afinidade.js"></script>
+  <script src="js/pontos.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

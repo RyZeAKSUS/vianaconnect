@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cabedelo-surf",
+    "categoria": "desporto",
+    "titulo": "Treino de surf no Cabedelo",
+    "descricao": "Grupo que treina junto duas vezes por semana.",
+    "etiquetas": { "mar": 3, "desporto": 3, "social": 2 },
+    "porqueRelacoes": "Treinar com o mesmo grupo todas as semanas cria amizades fixas em poucos meses."
+  },
+  {
+    "id": "santa-luzia",
+    "categoria": "natureza",
+    "titulo": "Corrida matinal no Monte de Santa Luzia",
+    "descricao": "Percurso com vista sobre o rio Lima e o mar.",
+    "etiquetas": { "natureza": 3, "desporto": 2, "tranquilidade": 2 },
+    "porqueRelacoes": "Os grupos de corrida locais aceitam sempre caras novas."
+  },
+  {
+    "id": "tasca-tradicional",
+    "categoria": "gastronomia",
+    "titulo": "Jantar de tasca com produtos locais",
+    "descricao": "Mesa partilhada num restaurante de bairro.",
+    "etiquetas": { "gastronomia": 3, "social": 2, "tradicao": 2 },
+    "porqueRelacoes": "Ser cliente habitual de um sitio pequeno e a forma mais rapida de ser reconhecido na cidade."
+  }
+]

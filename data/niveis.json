@@ -1,0 +1,7 @@
+[
+  { "nome": "Semente", "minimo": 0,   "desbloqueia": "Resultado base e Top 5" },
+  { "nome": "Rebento", "minimo": 100, "desbloqueia": "Semana tipo completa" },
+  { "nome": "Raiz",    "minimo": 250, "desbloqueia": "Checklist dos primeiros 30 dias" },
+  { "nome": "Tronco",  "minimo": 400, "desbloqueia": "Ligacao a um padrinho local" },
+  { "nome": "Arvore",  "minimo": 600, "desbloqueia": "Plano de 3 dias a viver como um local" }
+]
