@@ -1,0 +1,73 @@
+/* Estilos do formulario (dono: A). Ficheiro proprio para nao dar conflitos com o style.css do D.
+   As cores vem das variaveis do style.css; os valores a seguir ao "," sao reserva. */
+.vc-cartao {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 12px rgba(18, 48, 42, 0.1);
+}
+
+.vc-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--secundaria, #2f6f5e);
+}
+
+.vc-barra {
+  height: 8px;
+  background: #e6e1d6;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.vc-barra div {
+  height: 100%;
+  background: var(--destaque, #e9a06b);
+  transition: width 0.3s;
+}
+
+.vc-subtitulo { margin-top: 0; opacity: 0.8; }
+
+.vc-pergunta { border: 0; padding: 0; margin: 0 0 20px; }
+.vc-pergunta legend { font-weight: 600; margin-bottom: 8px; padding: 0; }
+
+.vc-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #d9d3c5;
+  border-radius: 8px;
+}
+
+.vc-opcoes { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.vc-opcao {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 2px solid #d9d3c5;
+  border-radius: 99px;
+  cursor: pointer;
+}
+
+/* Destaque da opcao escolhida (:has e suportado nos browsers atuais) */
+.vc-opcao:has(input:checked) {
+  background: var(--secundaria, #2f6f5e);
+  border-color: var(--secundaria, #2f6f5e);
+  color: #fff;
+}
+
+.vc-opcao input { accent-color: var(--destaque, #e9a06b); }
+
+.vc-erro { color: #b3261e; min-height: 1.4em; margin: 0 0 8px; }
+
+.vc-botoes { display: flex; justify-content: space-between; gap: 12px; }
+
+.vc-secundario { background: transparent; border: 2px solid var(--secundaria, #2f6f5e); }
+
+.vc-final { text-align: center; }
+.vc-final .vc-botoes { justify-content: center; flex-wrap: wrap; }
