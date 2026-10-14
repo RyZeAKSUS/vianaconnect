@@ -1,0 +1,90 @@
+/* progresso.css — estilos do ecrã de progresso (papel C)
+ * Usa variáveis com valor por defeito. O D pode defini-las no :root do style.css
+ * para alinhar com a identidade visual, ou copiar este ficheiro para dentro do style.css.
+ */
+.progresso {
+  --p-folha: var(--cor-primaria, #2f7d4f);
+  --p-folha-clara: var(--cor-primaria-clara, #5fae7a);
+  --p-tronco: #7a5232;
+  --p-fundo: var(--cor-fundo, #f6f8f4);
+  --p-texto: var(--cor-texto, #1d2b22);
+  --p-suave: var(--cor-suave, #dfe8df);
+  --p-destaque: var(--cor-destaque, #d98a1f);
+
+  max-width: 34rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1.25rem;
+  color: var(--p-texto);
+}
+
+.progresso-aviso {
+  margin: 0;
+  padding: .75rem 1rem;
+  border-left: 4px solid var(--p-destaque);
+  background: #fff6e6;
+  font-weight: 600;
+}
+
+/* Árvore */
+.progresso-arvore { display: flex; justify-content: center; }
+.arvore-svg { width: min(15rem, 70vw); height: auto; }
+.arv-chao { fill: var(--p-suave); }
+.arv-semente { fill: var(--p-tronco); }
+.arv-tronco { fill: var(--p-tronco); }
+.arv-folha { fill: var(--p-folha-clara); }
+.arv-copa { fill: var(--p-folha); }
+.arv-copa-1 { fill: var(--p-folha-clara); }
+.arv-copa-2 { fill: #3f9462; }
+.arv-fruto { fill: var(--p-destaque); }
+
+/* Só anima quando acabou de subir de nível, como resposta à ação da pessoa */
+.progresso-arvore.cresceu .arvore-svg { animation: crescer .7s ease-out; transform-origin: 50% 90%; }
+@keyframes crescer {
+  from { transform: scale(.82); }
+  60%  { transform: scale(1.06); }
+  to   { transform: scale(1); }
+}
+
+/* Informação */
+.progresso-info { display: grid; gap: .35rem; }
+.progresso-info p { margin: 0; }
+.progresso-nivel { font-size: 1.25rem; font-weight: 700; }
+.progresso-sementes strong { font-size: 2rem; }
+.progresso-legenda, .progresso-streak { font-size: .95rem; opacity: .8; }
+
+.barra { height: .6rem; border-radius: 999px; background: var(--p-suave); overflow: hidden; }
+.barra-cheia { height: 100%; background: var(--p-folha); border-radius: 999px; transition: width .5s ease; }
+
+/* Blocos */
+.progresso-bloco h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.desbloqueios, .historico { list-style: none; margin: 0; padding: 0; display: grid; gap: .4rem; }
+
+.desbloqueio {
+  display: flex; flex-direction: column; gap: .1rem;
+  padding: .6rem .8rem;
+  border: 1px solid var(--p-suave);
+  border-radius: .5rem;
+}
+.desbloqueio.aberto { border-color: var(--p-folha); background: #eef6f0; }
+.desbloqueio.fechado { opacity: .6; border-style: dashed; }
+.desbloqueio-estado { font-size: .8rem; opacity: .75; }
+.desbloqueio-texto { font-weight: 600; }
+
+.historico li {
+  display: flex; justify-content: space-between; gap: 1rem;
+  padding: .4rem 0; border-bottom: 1px solid var(--p-suave);
+}
+.historico li.vazio { opacity: .7; border: 0; }
+.historico strong { color: var(--p-folha); }
+
+@media (min-width: 40rem) {
+  .progresso { grid-template-columns: 1fr 1fr; align-items: center; max-width: 52rem; }
+  .progresso-aviso, .progresso-bloco { grid-column: 1 / -1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progresso-arvore.cresceu .arvore-svg { animation: none; }
+  .barra-cheia { transition: none; }
+}
