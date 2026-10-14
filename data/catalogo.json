@@ -3,24 +3,240 @@
     "id": "cabedelo-surf",
     "categoria": "desporto",
     "titulo": "Treino de surf no Cabedelo",
-    "descricao": "Grupo que treina junto duas vezes por semana.",
-    "etiquetas": { "mar": 3, "desporto": 3, "social": 2 },
-    "porqueRelacoes": "Treinar com o mesmo grupo todas as semanas cria amizades fixas em poucos meses."
+    "descricao": "Sugestão de demonstração: explorar a possibilidade de praticar surf no Cabedelo com acompanhamento adequado à tua experiência. Confirma as condições e a disponibilidade antes de participar.",
+    "etiquetas": { "mar": 3, "desporto": 2, "social": 1 },
+    "porqueRelacoes": "Se optares por uma sessão acompanhada, trocar impressões sobre a prática pode abrir espaço para conversar com outras pessoas."
   },
   {
     "id": "santa-luzia",
     "categoria": "natureza",
     "titulo": "Corrida matinal no Monte de Santa Luzia",
-    "descricao": "Percurso com vista sobre o rio Lima e o mar.",
+    "descricao": "Sugestão de demonstração: experimentar uma corrida no Monte de Santa Luzia, escolhendo um percurso e um ritmo adequados à tua condição física.",
     "etiquetas": { "natureza": 3, "desporto": 2, "tranquilidade": 2 },
-    "porqueRelacoes": "Os grupos de corrida locais aceitam sempre caras novas."
+    "porqueRelacoes": "A corrida pode ser individual. Se convidares alguém com um ritmo semelhante, as pausas e a escolha do percurso podem dar lugar a conversa."
   },
   {
     "id": "tasca-tradicional",
     "categoria": "gastronomia",
     "titulo": "Jantar de tasca com produtos locais",
-    "descricao": "Mesa partilhada num restaurante de bairro.",
+    "descricao": "Sugestão de demonstração: combinar uma refeição numa tasca com pessoas interessadas em conhecer a cozinha local. Escolham o espaço e confirmem as condições em conjunto.",
     "etiquetas": { "gastronomia": 3, "social": 2, "tradicao": 2 },
-    "porqueRelacoes": "Ser cliente habitual de um sitio pequeno e a forma mais rapida de ser reconhecido na cidade."
+    "porqueRelacoes": "Escolher pratos e partilhar memórias à mesa dá um tema concreto à conversa, sem exigir que todos já se conheçam."
+  },
+  {
+    "id": "caminhada-junto-ao-mar",
+    "categoria": "natureza",
+    "titulo": "Uma pausa a caminhar junto ao mar",
+    "descricao": "Sugestão de demonstração: reservar uma pausa para caminhar junto ao mar em Viana, num percurso acessível para ti e com condições adequadas nesse dia.",
+    "etiquetas": { "natureza": 3, "mar": 2, "tranquilidade": 2 },
+    "porqueRelacoes": "Podes fazer esta pausa a sós. Se a partilhares com alguém, caminhar lado a lado permite conversar sem a pressão de um encontro formal."
+  },
+  {
+    "id": "caderno-da-natureza",
+    "categoria": "natureza",
+    "titulo": "Um caderno para observar a natureza",
+    "descricao": "Sugestão de demonstração: registar plantas, sons e mudanças da estação num espaço verde do teu quotidiano, através de notas ou desenhos.",
+    "etiquetas": { "natureza": 3, "tranquilidade": 2, "cultura": 1 },
+    "porqueRelacoes": "A observação pode ser individual. Se escolheres partilhar o caderno numa iniciativa de desenho ou natureza, os registos dão um ponto de partida à conversa."
+  },
+  {
+    "id": "fotografia-da-costa",
+    "categoria": "natureza",
+    "titulo": "Olhar a costa através da fotografia",
+    "descricao": "Sugestão de demonstração: experimentar fotografar a luz e a paisagem costeira, respeitando os caminhos e as condições do local. Podes propor uma saída acompanhada.",
+    "etiquetas": { "natureza": 3, "mar": 2, "cultura": 2 },
+    "porqueRelacoes": "Se fizeres a saída com outras pessoas, comparar enquadramentos permite trocar ideias e aprender maneiras diferentes de olhar o mesmo lugar."
+  },
+  {
+    "id": "cultivar-em-pequenos-espacos",
+    "categoria": "natureza",
+    "titulo": "Cultivar e trocar experiências",
+    "descricao": "Sugestão de demonstração: começar a cuidar de plantas num espaço adequado em casa e propor uma troca de experiências sobre cultivo com pessoas interessadas.",
+    "etiquetas": { "natureza": 3, "tranquilidade": 2, "social": 1 },
+    "porqueRelacoes": "Partilhar dúvidas e acompanhar a evolução das plantas pode dar continuidade às conversas, caso os participantes queiram voltar a trocar experiências."
+  },
+  {
+    "id": "voleibol-na-praia",
+    "categoria": "desporto",
+    "titulo": "Um jogo de voleibol junto ao mar",
+    "descricao": "Sugestão de demonstração: propor um jogo informal de voleibol na praia, depois de confirmar um espaço permitido, condições adequadas e o interesse dos participantes.",
+    "etiquetas": { "desporto": 3, "mar": 2, "social": 2 },
+    "porqueRelacoes": "Combinar equipas e adaptar as regras ao nível de cada pessoa cria oportunidades de cooperação durante o jogo."
+  },
+  {
+    "id": "pedalar-no-quotidiano",
+    "categoria": "desporto",
+    "titulo": "Experimentar um percurso de bicicleta",
+    "descricao": "Sugestão de demonstração: explorar um percurso de bicicleta que possa caber na tua rotina em Viana. Avalia o trajeto, o equipamento e a tua experiência antes de sair.",
+    "etiquetas": { "desporto": 3, "natureza": 2, "tranquilidade": 1 },
+    "porqueRelacoes": "O percurso pode ser individual. Se o testares com alguém, comparar alternativas e combinar pausas oferece uma tarefa comum para conversar."
+  },
+  {
+    "id": "mobilidade-ao-ar-livre",
+    "categoria": "desporto",
+    "titulo": "Uma pausa para alongar e mexer o corpo",
+    "descricao": "Sugestão de demonstração: experimentar movimentos leves de mobilidade num espaço ao ar livre, respeitando os teus limites. Podes convidar alguém para partilhar a pausa.",
+    "etiquetas": { "desporto": 3, "tranquilidade": 2, "natureza": 1 },
+    "porqueRelacoes": "Se a pausa for acompanhada, combinar um ritmo confortável para ambos pode tornar mais natural voltar a encontrar essa pessoa."
+  },
+  {
+    "id": "jogo-de-badminton",
+    "categoria": "desporto",
+    "titulo": "Aprender badminton a pares",
+    "descricao": "Sugestão de demonstração: propor uma experiência de badminton com alguém que queira aprender ou praticar. Confirmem um espaço adequado e o material necessário.",
+    "etiquetas": { "desporto": 3, "social": 2 },
+    "porqueRelacoes": "Explicar as regras e experimentar jogadas em conjunto permite colaborar mesmo quando os participantes têm níveis diferentes."
+  },
+  {
+    "id": "roda-de-leitura",
+    "categoria": "cultura",
+    "titulo": "Conversas a partir de uma leitura",
+    "descricao": "Sugestão de demonstração: propor uma conversa sobre um livro ou texto escolhido em conjunto. Cada pessoa pode trazer uma passagem ou uma pergunta, sem obrigação de apresentar nada.",
+    "etiquetas": { "cultura": 3, "social": 2, "tranquilidade": 1 },
+    "porqueRelacoes": "Ouvir interpretações diferentes de um texto permite descobrir interesses comuns e conhecer as perspetivas dos participantes."
+  },
+  {
+    "id": "bordado-e-conversa",
+    "categoria": "cultura",
+    "titulo": "Experimentar bordado e trocar saberes",
+    "descricao": "Sugestão de demonstração: explorar uma técnica de bordado e propor uma troca de conhecimentos sobre motivos tradicionais. Cada participante pode aprender ao seu ritmo.",
+    "etiquetas": { "cultura": 3, "tradicao": 2, "social": 1 },
+    "porqueRelacoes": "Mostrar um ponto e pedir ajuda numa tarefa manual cria oportunidades de conversa e colaboração entre pessoas com experiências diferentes."
+  },
+  {
+    "id": "memorias-em-desenho",
+    "categoria": "cultura",
+    "titulo": "Desenhar memórias e costumes",
+    "descricao": "Sugestão de demonstração: escolher um objeto ou costume com significado pessoal e representá-lo em desenho. Podes propor uma partilha dos trabalhos e das histórias que os inspiraram.",
+    "etiquetas": { "cultura": 3, "tradicao": 2, "tranquilidade": 1 },
+    "porqueRelacoes": "Se optares pela partilha, explicar a história de um objeto permite conhecer experiências de outras pessoas sem exigir domínio do desenho."
+  },
+  {
+    "id": "cinema-e-conversa",
+    "categoria": "cultura",
+    "titulo": "Uma conversa depois de um filme",
+    "descricao": "Sugestão de demonstração: escolher com outras pessoas um filme a que tenham acesso e combinar uma conversa sobre os temas que mais vos despertaram curiosidade.",
+    "etiquetas": { "cultura": 3, "social": 2 },
+    "porqueRelacoes": "Um filme partilhado oferece assuntos concretos para conversar e espaço para ouvir opiniões diferentes."
+  },
+  {
+    "id": "musica-e-tradicoes",
+    "categoria": "cultura",
+    "titulo": "Partilhar músicas e as suas histórias",
+    "descricao": "Sugestão de demonstração: propor uma escuta partilhada em que cada pessoa apresenta uma música ligada às suas memórias ou tradições, incluindo as que associa a Viana.",
+    "etiquetas": { "cultura": 3, "tradicao": 2, "social": 2 },
+    "porqueRelacoes": "Explicar por que razão uma música importa pode revelar histórias pessoais e afinidades entre participantes."
+  },
+  {
+    "id": "receitas-de-familia",
+    "categoria": "gastronomia",
+    "titulo": "Trocar receitas de família",
+    "descricao": "Sugestão de demonstração: propor uma troca de receitas ligadas às memórias de cada pessoa. Podem conversar sobre ingredientes e adaptações sem precisar de cozinhar no encontro.",
+    "etiquetas": { "gastronomia": 3, "tradicao": 2, "social": 2 },
+    "porqueRelacoes": "As histórias por trás das receitas ajudam a conhecer percursos diferentes e dão espaço a perguntas entre participantes."
+  },
+  {
+    "id": "cozinhar-em-conjunto",
+    "categoria": "gastronomia",
+    "titulo": "Preparar uma refeição em conjunto",
+    "descricao": "Sugestão de demonstração: combinar uma refeição feita em conjunto, num espaço acordado entre participantes. Definam tarefas, ingredientes e necessidades alimentares antes de começar.",
+    "etiquetas": { "gastronomia": 3, "social": 2 },
+    "porqueRelacoes": "Dividir tarefas e resolver pequenas escolhas durante a preparação cria oportunidades de ajuda e conversa."
+  },
+  {
+    "id": "sabores-da-estacao",
+    "categoria": "gastronomia",
+    "titulo": "Explorar ingredientes da estação",
+    "descricao": "Sugestão de demonstração: escolher ingredientes da estação para uma refeição e trocar ideias sobre como os preparar. Podes fazer a pesquisa a sós ou com alguém.",
+    "etiquetas": { "gastronomia": 3, "natureza": 2, "tradicao": 1 },
+    "porqueRelacoes": "Se partilhares a escolha e a preparação, comparar hábitos de cozinha permite aprender com a experiência de outra pessoa."
+  },
+  {
+    "id": "lanche-e-trocas",
+    "categoria": "gastronomia",
+    "titulo": "Um lanche para trocar ideias de cozinha",
+    "descricao": "Sugestão de demonstração: propor um lanche em que cada participante partilha uma ideia simples para cozinhar no dia a dia. Combinem o local e o que faz sentido levar.",
+    "etiquetas": { "gastronomia": 3, "social": 2, "tranquilidade": 1 },
+    "porqueRelacoes": "Uma pergunta prática sobre cozinha pode iniciar a conversa e dar lugar à troca de experiências do quotidiano."
+  },
+  {
+    "id": "cuidar-da-orla",
+    "categoria": "comunidade",
+    "titulo": "Explorar formas de cuidar da orla costeira",
+    "descricao": "Sugestão de demonstração: procurar uma iniciativa de voluntariado ambiental junto ao mar. Antes de aderir, confirma se existe uma ação ativa, quem a organiza e quais as orientações de participação.",
+    "etiquetas": { "social": 3, "natureza": 2, "mar": 2 },
+    "porqueRelacoes": "Se participares numa ação acompanhada, colaborar numa tarefa de cuidado do espaço comum permite conversar com pessoas que partilham essa preocupação."
+  },
+  {
+    "id": "programar-em-conjunto",
+    "categoria": "comunidade",
+    "titulo": "Partilhar pequenos projetos de programação",
+    "descricao": "Sugestão de demonstração: propor uma sessão de troca de conhecimentos de programação. Cada pessoa pode trazer uma dúvida ou um pequeno projeto, sem precisar de o ter concluído.",
+    "etiquetas": { "tecnologia": 3, "social": 2 },
+    "porqueRelacoes": "Explicar uma dúvida e explorar soluções em conjunto permite colaborar e reconhecer interesses técnicos comuns."
+  },
+  {
+    "id": "entreajuda-digital",
+    "categoria": "comunidade",
+    "titulo": "Trocar conhecimentos sobre ferramentas digitais",
+    "descricao": "Sugestão de demonstração: propor uma troca de dicas sobre ferramentas digitais do quotidiano, usando exemplos fictícios e sem partilhar palavras-passe ou documentos pessoais.",
+    "etiquetas": { "tecnologia": 3, "social": 2 },
+    "porqueRelacoes": "Alternar entre explicar e aprender valoriza os conhecimentos de cada participante e oferece uma tarefa concreta de entreajuda."
+  },
+  {
+    "id": "conversas-de-percurso",
+    "categoria": "comunidade",
+    "titulo": "Conversar sobre percursos profissionais",
+    "descricao": "Sugestão de demonstração: propor uma conversa entre pessoas de áreas profissionais diferentes sobre aprendizagens e mudanças de percurso. A proposta não representa ofertas de trabalho.",
+    "etiquetas": { "carreira": 3, "social": 2 },
+    "porqueRelacoes": "Partilhar dúvidas e aprendizagens permite reconhecer experiências comuns e conhecer perspetivas de outras áreas."
+  },
+  {
+    "id": "memorias-do-bairro",
+    "categoria": "comunidade",
+    "titulo": "Escutar e partilhar memórias do bairro",
+    "descricao": "Sugestão de demonstração: propor uma conversa com pessoas interessadas em partilhar memórias e mudanças do seu bairro em Viana. Cada pessoa escolhe o que quer contar.",
+    "etiquetas": { "social": 3, "tradicao": 2, "cultura": 1 },
+    "porqueRelacoes": "Escutar histórias e fazer perguntas sobre o quotidiano pode aproximar perspetivas de quem chegou há pouco e de quem conhece o bairro há mais tempo."
+  },
+  {
+    "id": "portfolio-digital",
+    "categoria": "vida-pratica",
+    "titulo": "Organizar um portefólio digital",
+    "descricao": "Sugestão de demonstração: reunir exemplos do teu trabalho num portefólio digital e, se quiseres, pedir comentários a alguém da tua área. Usa apenas materiais que possas partilhar.",
+    "etiquetas": { "carreira": 3, "tecnologia": 2 },
+    "porqueRelacoes": "A organização pode ser individual. Pedir e oferecer comentários sobre trabalhos dá um motivo concreto para trocar conhecimentos profissionais."
+  },
+  {
+    "id": "rotina-de-trabalho-remoto",
+    "categoria": "vida-pratica",
+    "titulo": "Pensar a rotina de trabalho remoto",
+    "descricao": "Sugestão de demonstração: comparar formas de organizar tarefas, ferramentas digitais e pausas no trabalho remoto. Podes propor uma conversa com pessoas que tenham uma rotina semelhante.",
+    "etiquetas": { "carreira": 3, "tecnologia": 2, "tranquilidade": 1 },
+    "porqueRelacoes": "Se escolheres trocar experiências, os desafios comuns do trabalho à distância podem dar origem a conversas úteis e a novos contactos."
+  },
+  {
+    "id": "praticar-apresentacao-profissional",
+    "categoria": "vida-pratica",
+    "titulo": "Praticar como apresentar o teu percurso",
+    "descricao": "Sugestão de demonstração: preparar uma apresentação breve do teu percurso profissional e propor uma troca de comentários com outra pessoa. Não se trata de recrutamento nem de uma entrevista real.",
+    "etiquetas": { "carreira": 3, "social": 2 },
+    "porqueRelacoes": "Ouvir e comentar as apresentações um do outro cria uma situação de apoio recíproco e permite conhecer interesses profissionais."
+  },
+  {
+    "id": "organizar-a-semana",
+    "categoria": "vida-pratica",
+    "titulo": "Organizar a semana com ferramentas digitais",
+    "descricao": "Sugestão de demonstração: experimentar uma agenda digital para distribuir tarefas, deslocações e tempo livre em Viana. Podes comparar métodos com alguém, usando uma semana fictícia.",
+    "etiquetas": { "tecnologia": 3, "tranquilidade": 2 },
+    "porqueRelacoes": "A organização é uma tarefa individual. Se partilhares métodos com outra pessoa, comparar dificuldades do dia a dia pode abrir espaço para entreajuda."
+  },
+  {
+    "id": "reconhecer-a-vizinhanca",
+    "categoria": "vida-pratica",
+    "titulo": "Conhecer os percursos do teu dia a dia",
+    "descricao": "Sugestão de demonstração: testar a pé um percurso entre uma possível casa e os locais de que precisarias na rotina. Se fores acompanhado, comparem o que cada pessoa considera importante.",
+    "etiquetas": { "tranquilidade": 3, "social": 1 },
+    "porqueRelacoes": "O reconhecimento pode ser feito a sós. Numa versão acompanhada, as escolhas do percurso dão oportunidade para conversar sobre hábitos e necessidades."
   }
 ]

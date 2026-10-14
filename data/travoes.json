@@ -1,12 +1,37 @@
 [
   {
     "id": "conhecer-ninguem",
-    "medo": "Nao conheco ninguem em Viana",
-    "resposta": "Grupos que se juntam toda a semana e um padrinho local com perfil parecido ao teu."
+    "medo": "Não conheço ninguém em Viana",
+    "resposta": "Começa por uma atividade ligada a um interesse teu e confirma se podes participar numa sessão. Se te sentires confortável, voltar ao mesmo grupo pode ajudar a conhecer as pessoas aos poucos e a criar uma rotina de encontros."
   },
   {
     "id": "casa",
-    "medo": "Nao sei como encontrar casa",
-    "resposta": "Checklist dos primeiros 30 dias com os passos pela ordem certa."
+    "medo": "Não sei como encontrar casa",
+    "resposta": "Define o que precisas numa casa e o valor mensal que podes suportar, incluindo despesas e deslocações. Compara anúncios atuais e zonas, visita as opções e testa o percurso até ao trabalho ou estudo antes de decidir."
+  },
+  {
+    "id": "emprego",
+    "medo": "Tenho receio de não encontrar trabalho",
+    "resposta": "Procura ofertas atuais na tua área e compara os requisitos com a tua experiência. Contacta potenciais empregadores para perceber as condições e, se trabalhas à distância, confirma com a tua entidade empregadora se podes manter essa modalidade ao mudar de cidade."
+  },
+  {
+    "id": "poucas-atividades",
+    "medo": "Tenho receio de ficar sem atividades que me interessem",
+    "resposta": "Escolhe dois ou três interesses que queres manter na tua rotina e explora as sugestões relacionadas. Confirma com os organizadores quais estão ativas, os horários e os custos. Experimentar uma sessão pode ajudar-te a perceber se a atividade combina contigo."
+  },
+  {
+    "id": "transportes",
+    "medo": "Não sei como me deslocar em Viana",
+    "resposta": "Lista os percursos que farias entre casa, trabalho ou estudo e atividades. Consulta os horários atuais dos transportes para os dias e horas de que precisas e compara as alternativas. Se possível, testa uma deslocação antes de escolher onde viver."
+  },
+  {
+    "id": "familia",
+    "medo": "Tenho receio de ficar longe da minha família",
+    "resposta": "Pensa na frequência com que gostarias de estar com a tua família e compara os tempos e custos das viagens. Combina formas de manter contacto à distância e avalia se essa rotina seria viável para todos. Criar relações locais também pode ajudar na adaptação, sem substituir os laços familiares."
+  },
+  {
+    "id": "cidade-desconhecida",
+    "medo": "Conheço pouco a cidade para decidir viver lá",
+    "resposta": "Planeia uma visita para experimentar um dia normal: explorar uma possível zona de residência, fazer compras, testar uma deslocação e participar numa atividade do teu interesse. Conversa com residentes sobre o quotidiano e regista o que gostaste e o que ainda precisas de esclarecer."
   }
 ]
