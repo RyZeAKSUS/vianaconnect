@@ -1,0 +1,7 @@
+[
+  { "dia": "segunda", "momento": "manhã", "categoria": "natureza" },
+  { "dia": "terça", "momento": "tarde", "categoria": "vida-pratica" },
+  { "dia": "quarta", "momento": "noite", "categoria": "comunidade" },
+  { "dia": "sexta", "momento": "tarde", "categoria": "desporto" },
+  { "dia": "sábado", "momento": "manhã", "categoria": "cultura" }
+]
